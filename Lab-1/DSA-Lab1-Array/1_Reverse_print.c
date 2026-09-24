@@ -5,6 +5,6 @@ void main(){
 
     printf("OUTPUT- ");
     for(int i = 9; i>=0; i--){
-        printf("%d ",arr[i]);
+        printf("%d, ",arr[i]);
     }
 }

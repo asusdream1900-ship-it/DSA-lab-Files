@@ -19,7 +19,7 @@ void main(){
         
     }
     for(int i=0; i<11; i++){
-        printf("%d ",arr[i]);
+        printf("%d, ",arr[i]);
     }
     
 }

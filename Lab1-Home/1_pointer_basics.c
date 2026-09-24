@@ -7,7 +7,7 @@ int Swap(int *p, int *q){
 }
 void main(){
     int first = 10, second = 20;
-    printf("After swap = First %d Second %d\n",first,second);
+    printf("before swap = First %d Second %d\n",first,second);
     Swap(&first,&second);
-    printf("befour swap = First %d Second %d",first,second);
+    printf("after swap = First %d Second %d",first,second);
 }
