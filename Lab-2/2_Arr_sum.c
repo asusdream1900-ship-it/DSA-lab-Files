@@ -1,0 +1,23 @@
+#include<stdio.h>
+int sum(int a[], int n){
+    int sum=0;
+    for(int i =0;i<n;i++){
+        sum += a[i];
+    }
+    return sum;
+}
+int maxOf(int a[], int n){
+    int max = a[0];
+    for(int i =0;i<n;i++){
+        if(max<a[i]) max = a[i];
+    }
+    return max;
+}
+void main(){
+    int arr[] = {3,6,2,66,35,10,56,11,46,99};
+    int size = 10;
+    int sums = sum(arr,size);
+    int max = maxOf(arr,size);
+    printf("Sum = %d : max = %d",sums,max);
+    
+}

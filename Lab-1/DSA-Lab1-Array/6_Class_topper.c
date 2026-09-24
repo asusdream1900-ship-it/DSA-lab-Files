@@ -17,6 +17,6 @@ void main(){
     for (int i = 1; i < 3; i++){
         if(arr[first].marks<arr[i].marks) first = i;
     }
-    printf("Topper = 7name %s: roll %d: marks = %d:",arr[first].name,arr[first].roll,arr[first].marks);
+    printf("Topper = name %s: roll %d: marks = %d:",arr[first].name,arr[first].roll,arr[first].marks);
     
 }
