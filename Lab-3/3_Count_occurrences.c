@@ -16,5 +16,5 @@ void main(){
     int size = 10;
     int key = 6;
     int res = counts(arr,size,key);
-    printf("Count = %d",res);
+    printf("key %d OUTPUT Count = %d",key,res);
 }

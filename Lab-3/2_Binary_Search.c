@@ -3,22 +3,18 @@
 #include<stdio.h>
 
 void binary_Sort(int arr[],int size,int key){
-    int lower = 0;
-    int heigh = size-1;
-    int flage = 0;
+    int lower = 0,flage = 0,heigh = size-1;
     for(int i = 0; lower <= heigh && i<size; i++){
         int mid = (lower+heigh)/2;
         if(key==arr[mid]){
-            printf("Found, index = %d ",mid);
+            printf("key %d OUTPUT Found, index = %d ",arr[mid],mid);
             flage = 1;
             break;
         } 
-        else if(key>arr[mid]){
-            lower = mid+1;
-        }
-        else{
-            heigh = mid-i;
-        }
+        else if(key>arr[mid]) lower = mid+1;
+        
+        else heigh = mid-i;
+        
     }
     if(flage == 0){
         printf("Not found");

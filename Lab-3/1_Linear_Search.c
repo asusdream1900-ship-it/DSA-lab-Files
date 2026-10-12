@@ -6,7 +6,7 @@ void finder(int arr[],int key){
     int flag = 0;
     for(int i=0; i<10;i++){
         if(key == arr[i]){
-            printf("Found at index %d\n",i);
+            printf("key %d OUTPUT Found at index %d\n",arr[i],i);
             flag = 1;
             break;
         }
