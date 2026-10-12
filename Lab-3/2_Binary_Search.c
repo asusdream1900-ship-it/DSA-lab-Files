@@ -11,10 +11,8 @@ void binary_Sort(int arr[],int size,int key){
             flage = 1;
             break;
         } 
-        else if(key>arr[mid]) lower = mid+1;
-        
-        else heigh = mid-i;
-        
+        else if(key>arr[mid]) lower = mid+1; 
+        else heigh = mid-i;    
     }
     if(flage == 0){
         printf("Not found");
